@@ -10,7 +10,7 @@ log.*
 .nfs*
 
 # NextFlow
-#.nextflow*
+.nextflow/*
 work/
 data/
 results/

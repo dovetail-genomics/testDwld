@@ -1,0 +1,374 @@
+Oct-12 15:44:32.305 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -resume
+Oct-12 15:44:32.394 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.10.0-RC3
+Oct-12 15:44:32.415 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/ubuntu/.nextflow/plugins; core-plugins: nf-amazon@1.11.0,nf-azure@0.14.2,nf-codecommit@0.1.2,nf-console@1.0.4,nf-ga4gh@1.0.4,nf-google@1.4.4,nf-tower@1.5.5,nf-wave@0.5.1
+Oct-12 15:44:32.435 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-12 15:44:32.437 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-12 15:44:32.442 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Oct-12 15:44:32.454 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-12 15:44:32.470 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/ubuntu/ebs/working/nfExamples/testDwld/nextflow.config
+Oct-12 15:44:32.471 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/ubuntu/ebs/working/nfExamples/testDwld/nextflow.config
+Oct-12 15:44:32.493 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Oct-12 15:44:33.125 [main] WARN  nextflow.config.ConfigBuilder - It appears you have never run this project before -- Option `-resume` is ignored
+Oct-12 15:44:33.140 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=1 by probing script field
+Oct-12 15:44:33.157 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [stupefied_keller] DSL1 - revision: f7a1d8210f
+Oct-12 15:44:33.158 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[nf-amazon@1.11.0]
+Oct-12 15:44:33.160 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-amazon@1.11.0, nf-tower@1.5.5]
+Oct-12 15:44:33.161 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-amazon version: 1.11.0
+Oct-12 15:44:33.170 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-amazon@1.11.0' resolved
+Oct-12 15:44:33.170 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-amazon@1.11.0'
+Oct-12 15:44:33.189 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-amazon@1.11.0
+Oct-12 15:44:33.205 [main] DEBUG nextflow.file.FileHelper - > Added 'S3FileSystemProvider' to list of installed providers [s3]
+Oct-12 15:44:33.205 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-tower version: 1.5.5
+Oct-12 15:44:33.211 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-tower@1.5.5' resolved
+Oct-12 15:44:33.211 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-tower@1.5.5'
+Oct-12 15:44:33.221 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-tower@1.5.5
+Oct-12 15:44:33.231 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/ubuntu/.nextflow/secrets/store.json
+Oct-12 15:44:33.234 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2c7106d9] - activable => nextflow.secret.LocalSecretsProvider@2c7106d9
+Oct-12 15:44:33.315 [main] DEBUG nextflow.Session - Session UUID: 68053adc-6b98-486e-8d01-61ee437118ac
+Oct-12 15:44:33.315 [main] DEBUG nextflow.Session - Run name: stupefied_keller
+Oct-12 15:44:33.315 [main] DEBUG nextflow.Session - Executor pool size: 48
+Oct-12 15:44:33.329 [main] DEBUG nextflow.file.FileHelper - Creating a file system instance for provider: S3FileSystemProvider
+Oct-12 15:44:33.341 [main] DEBUG nextflow.file.FileHelper - AWS S3 config details: {region=us-west-2, s3Acl=BucketOwnerFullControl, max_error_retry=5}
+Oct-12 15:44:33.798 [main] DEBUG com.upplication.s3fs.AmazonS3Client - Setting S3 canned ACL=bucket-owner-full-control [BucketOwnerFullControl]
+Oct-12 15:44:33.826 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=144; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Oct-12 15:44:33.831 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/ubuntu/ebs/working/nfExamples/testDwld/nextflow.config
+Oct-12 15:44:33.832 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/ubuntu/ebs/working/nfExamples/testDwld/nextflow.config
+Oct-12 15:44:33.842 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Oct-12 15:44:33.976 [main] WARN  nextflow.config.ConfigBuilder - It appears you have never run this project before -- Option `-resume` is ignored
+Oct-12 15:44:33.995 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 22.10.0-RC3 build 5820
+  Created: 07-10-2022 21:33 UTC 
+  System: Linux 5.15.0-1020-aws
+  Runtime: Groovy 3.0.13 on OpenJDK 64-Bit Server VM 11.0.16+8-post-Ubuntu-0ubuntu122.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 1702327@ip-172-31-7-169 [172.31.7.169]
+  CPUs: 48 - Mem: 186.6 GB (12.1 GB) - Swap: 0 (0)
+Oct-12 15:44:34.392 [main] DEBUG nextflow.file.FileHelper - Can't check if specified path is NFS (1): s3://tower-ops-2/work
+
+Oct-12 15:44:34.392 [main] DEBUG nextflow.Session - Work-dir: s3://tower-ops-2/work [null]
+Oct-12 15:44:34.398 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/ubuntu/ebs/working/nfExamples/testDwld/bin
+Oct-12 15:44:34.417 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[AwsBatchExecutor]
+Oct-12 15:44:34.427 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-12 15:44:34.430 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Oct-12 15:44:34.466 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-12 15:44:34.474 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 49; maxThreads: 1000
+Oct-12 15:44:34.652 [main] DEBUG nextflow.Session - Session start
+Oct-12 15:44:34.660 [main] DEBUG io.seqera.tower.plugin.TowerClient - Creating Tower observer -- endpoint=https://portal.dovetower.com/api; requestInterval=1s; aliveInterval=1m; maxRetries=5; backOffBase=3; backOffDelay=250
+Oct-12 15:44:35.019 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-12 15:44:35.061 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /dovetail-public/NF-test/genome/nexflow/hg38/; pattern: *.{amb,sa,pac,ann,bwt,fa}; options: [checkIfExists:true]
+Oct-12 15:44:35.112 [PathVisitor-2] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /dovetail-public/NF-test/fastqs/; pattern: *_{R1,R2}*.fastq.gz; options: [:]
+Oct-12 15:44:35.193 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:cpu` matches labels `cpu` for process with name bwa_mem
+Oct-12 15:44:35.195 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: awsbatch
+Oct-12 15:44:35.200 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'awsbatch'
+Oct-12 15:44:35.203 [main] DEBUG nextflow.executor.Executor - [warm up] executor > awsbatch
+Oct-12 15:44:35.215 [main] DEBUG nextflow.util.ThrottlingExecutor - Creating throttling executor with opts: nextflow.util.ThrottlingExecutor$Options(poolName:AWSBatch-executor, limiter:RateLimiter[stableRate=50.0qps], poolSize:240, maxPoolSize:240, queueSize:5000, maxRetries:10, keepAlive:1m, autoThrottle:true, errorBurstDelay:1s, rampUpInterval:100, rampUpFactor:1.2, rampUpMaxRate:1.7976931348623157E308, backOffFactor:2.0, backOffMinRate:0.0166666667, retryDelay:1s)
+Oct-12 15:44:35.219 [main] DEBUG nextflow.util.ThrottlingExecutor - Creating throttling executor with opts: nextflow.util.ThrottlingExecutor$Options(poolName:AWSBatch-reaper, limiter:RateLimiter[stableRate=50.0qps], poolSize:240, maxPoolSize:240, queueSize:5000, maxRetries:10, keepAlive:1m, autoThrottle:true, errorBurstDelay:1s, rampUpInterval:100, rampUpFactor:1.2, rampUpMaxRate:1.7976931348623157E308, backOffFactor:2.0, backOffMinRate:0.0166666667, retryDelay:1s)
+Oct-12 15:44:35.220 [main] DEBUG n.cloud.aws.batch.AwsBatchExecutor - Creating parallel monitor for executor 'awsbatch' > pollInterval=10s; dumpInterval=5m
+Oct-12 15:44:35.287 [main] DEBUG n.cloud.aws.batch.AwsBatchExecutor - [AWS BATCH] Executor options=AwsOptions(cliPath:/home/ec2-user/miniconda/bin/aws, storageClass:null, storageEncryption:null, storageKmsKeyId:null, remoteBinDir:null, region:us-west-2, maxParallelTransfers:4, maxTransferAttempts:5, delayBetweenAttempts:10s, retryMode:standard, maxSpotAttempts:5, debug:null, fetchInstanceType:true, jobRole:null, logsGroup:null, volumes:[], shareIdentifier:null, awsCli:/home/ec2-user/miniconda/bin/aws --region us-west-2)
+Oct-12 15:44:35.347 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:cpu` matches labels `cpu` for process with name bam_sort
+Oct-12 15:44:35.348 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: awsbatch
+Oct-12 15:44:35.353 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'awsbatch'
+Oct-12 15:44:35.359 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:major` matches labels `major` for process with name bam2bw
+Oct-12 15:44:35.360 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: awsbatch
+Oct-12 15:44:35.366 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'awsbatch'
+Oct-12 15:44:35.370 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: bwa_mem, bam2bw, bam_sort
+Oct-12 15:44:35.473 [main] INFO  io.seqera.tower.plugin.TowerClient - Monitor the execution with Nextflow Tower using this URL: https://portal.dovetower.com/user/marco/watch/2SdpaBEa5qGrA
+Oct-12 15:44:35.475 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Oct-12 15:44:35.486 [main] DEBUG nextflow.Session - Session await
+Oct-12 15:44:37.403 [AWSBatch-executor-1] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] [AWS BATCH] Found job definition name=nf-dovetailg-bwa-samtools:2; container=dovetailg/bwa-samtools
+Oct-12 15:44:37.509 [AWSBatch-executor-1] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=28c0dc86-6eae-4adb-97bd-42ed6ba45db7; work-dir=s3://tower-ops-2/work/44/893af1c3bde53c30aa70ee5df4b1eb
+Oct-12 15:44:37.510 [AWSBatch-executor-2] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=fc6e9bf6-6bf3-4623-9a04-95efac5d52ee; work-dir=s3://tower-ops-2/work/c9/29c353556a41693d29791fb7df203c
+Oct-12 15:44:37.510 [AWSBatch-executor-2] INFO  nextflow.Session - [c9/29c353] Submitted process > bwa_mem (gendx-10)
+Oct-12 15:44:37.510 [AWSBatch-executor-1] INFO  nextflow.Session - [44/893af1] Submitted process > bwa_mem (gendx-11)
+Oct-12 15:44:37.520 [AWSBatch-executor-14] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=8008db0d-c4d6-4989-9aef-ca1e68fa707c; work-dir=s3://tower-ops-2/work/fa/7d41b520dbc42fcdd04489db06296d
+Oct-12 15:44:37.520 [AWSBatch-executor-9] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=df29bee1-c4cc-437f-8cec-91b1b7c8c75c; work-dir=s3://tower-ops-2/work/c4/adff5e0dec0f905ddd9309ce543f7f
+Oct-12 15:44:37.525 [AWSBatch-executor-14] INFO  nextflow.Session - [fa/7d41b5] Submitted process > bwa_mem (gendx-5)
+Oct-12 15:44:37.521 [AWSBatch-executor-11] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=1a4ab53d-e95f-4292-9593-0f62a3970a3a; work-dir=s3://tower-ops-2/work/5a/e3dea2f98d2194288dc1be943ded8f
+Oct-12 15:44:37.525 [AWSBatch-executor-11] INFO  nextflow.Session - [5a/e3dea2] Submitted process > bwa_mem (gendx-2)
+Oct-12 15:44:37.524 [AWSBatch-executor-4] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=8e612bd9-78b6-444d-89f2-01012ad86616; work-dir=s3://tower-ops-2/work/4f/68f90f24ecb119526ef53cbf012867
+Oct-12 15:44:37.524 [AWSBatch-executor-5] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=5028a180-6f7c-429d-b27b-56e2def9f590; work-dir=s3://tower-ops-2/work/48/a8bb199117ab1152cfac7de8667717
+Oct-12 15:44:37.525 [AWSBatch-executor-9] INFO  nextflow.Session - [c4/adff5e] Submitted process > bwa_mem (gendx-1)
+Oct-12 15:44:37.525 [AWSBatch-executor-10] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=5a6a25ac-2475-42e6-bd34-3771b20b06ce; work-dir=s3://tower-ops-2/work/fa/10a13614fff25f25efde3be71590e2
+Oct-12 15:44:37.526 [AWSBatch-executor-5] INFO  nextflow.Session - [48/a8bb19] Submitted process > bwa_mem (gendx-16)
+Oct-12 15:44:37.526 [AWSBatch-executor-4] INFO  nextflow.Session - [4f/68f90f] Submitted process > bwa_mem (gendx-7)
+Oct-12 15:44:37.526 [AWSBatch-executor-10] INFO  nextflow.Session - [fa/10a136] Submitted process > bwa_mem (gendx-8)
+Oct-12 15:44:37.527 [AWSBatch-executor-12] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=e3510b37-c4fb-4c14-aeb6-5abd0477f08c; work-dir=s3://tower-ops-2/work/ae/56966652cfb90b788d741a2f4f30bd
+Oct-12 15:44:37.527 [AWSBatch-executor-12] INFO  nextflow.Session - [ae/569666] Submitted process > bwa_mem (gendx-13)
+Oct-12 15:44:37.527 [AWSBatch-executor-3] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=709d8dfb-5637-43e9-afbf-c44e2c3d0c49; work-dir=s3://tower-ops-2/work/71/93436085a658d1cb17ec1972e42687
+Oct-12 15:44:37.527 [AWSBatch-executor-3] INFO  nextflow.Session - [71/934360] Submitted process > bwa_mem (gendx-14)
+Oct-12 15:44:37.531 [AWSBatch-executor-6] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=0c6bd84e-5bd1-4944-886b-1afc6766022c; work-dir=s3://tower-ops-2/work/ea/b02d0d448579464209b7aaabb53d4a
+Oct-12 15:44:37.531 [AWSBatch-executor-8] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=63e63488-d57c-4bd0-95fa-40d231a5da7a; work-dir=s3://tower-ops-2/work/76/efd7023d308a9fe076b8def72afe9f
+Oct-12 15:44:37.536 [AWSBatch-executor-16] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=3cb21e20-b9c9-4c4f-9590-e1e95502dcc4; work-dir=s3://tower-ops-2/work/f7/656c0b2b5010bc996325c2bce37fbc
+Oct-12 15:44:37.537 [AWSBatch-executor-13] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=934c5072-b2ab-4b2f-b0d2-bfad89842a82; work-dir=s3://tower-ops-2/work/cf/c2a5ce8303a0c1294c59a4a034166e
+Oct-12 15:44:37.538 [AWSBatch-executor-6] INFO  nextflow.Session - [ea/b02d0d] Submitted process > bwa_mem (gendx-6)
+Oct-12 15:44:37.538 [AWSBatch-executor-8] INFO  nextflow.Session - [76/efd702] Submitted process > bwa_mem (gendx-12)
+Oct-12 15:44:37.538 [AWSBatch-executor-13] INFO  nextflow.Session - [cf/c2a5ce] Submitted process > bwa_mem (gendx-9)
+Oct-12 15:44:37.538 [AWSBatch-executor-16] INFO  nextflow.Session - [f7/656c0b] Submitted process > bwa_mem (gendx-4)
+Oct-12 15:44:37.550 [AWSBatch-executor-15] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=feb927ed-7ef9-4297-a37f-aeb3dfd37e0e; work-dir=s3://tower-ops-2/work/5c/88964b3a8d0ef7f61435cc23f18ee9
+Oct-12 15:44:37.550 [AWSBatch-executor-15] INFO  nextflow.Session - [5c/88964b] Submitted process > bwa_mem (gendx-15)
+Oct-12 15:44:37.561 [AWSBatch-executor-7] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=a589661d-2bae-4f36-a161-8f3818d08f0e; work-dir=s3://tower-ops-2/work/88/4ac27ba642e2c93d8b7f3336bddc42
+Oct-12 15:44:37.563 [AWSBatch-executor-7] INFO  nextflow.Session - [88/4ac27b] Submitted process > bwa_mem (gendx-3)
+Oct-12 15:47:45.543 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/c96e41bd0ceb43dbaf88033923154456 - The task is likely running on another cluster
+Oct-12 15:47:45.904 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/dfd5dcfbbbdc4adeb18f3202216b9608 - The task is likely running on another cluster
+Oct-12 15:47:46.068 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/1ccedd795b234c35b0c5490f88721371 - The task is likely running on another cluster
+Oct-12 15:47:46.221 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/b88e97c31c174f9abac9c995f99a28d8 - The task is likely running on another cluster
+Oct-12 15:47:46.363 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/98cdc0730ca248ff82c7585a4c34f78a - The task is likely running on another cluster
+Oct-12 15:47:46.513 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/adba43d517234365bce9b6fe78c4c36e - The task is likely running on another cluster
+Oct-12 15:47:46.661 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/46107c35a31f4618b824cec235eda013 - The task is likely running on another cluster
+Oct-12 15:47:46.819 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/22d9d57d93d145f48cb072e47f71eaf3 - The task is likely running on another cluster
+Oct-12 15:47:46.964 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/f70f8c73d0a54dba894d88e9ed3bdf5f - The task is likely running on another cluster
+Oct-12 15:47:47.126 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/913e476d92394fbbb4851262ccd00613 - The task is likely running on another cluster
+Oct-12 15:47:47.303 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/a0b33f0a8d814dcb852046a63999291b - The task is likely running on another cluster
+Oct-12 15:47:47.449 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/4107a3c594a54853b1f31517f6325a7d - The task is likely running on another cluster
+Oct-12 15:47:47.632 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/317d795e580e410fa89b8bf705b11732 - The task is likely running on another cluster
+Oct-12 15:47:47.769 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/eb6fbba492c74fe2b51d3aa9764d1b18 - The task is likely running on another cluster
+Oct-12 15:47:47.925 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/0c53b394713d45139c70174b04b6fcda - The task is likely running on another cluster
+Oct-12 15:47:48.061 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/306a306cbbcf40c3b3676c205ce2cfa1 - The task is likely running on another cluster
+Oct-12 15:48:55.436 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: bwa_mem (gendx-1); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/c4/adff5e0dec0f905ddd9309ce543f7f]
+Oct-12 15:48:55.822 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: bwa_mem (gendx-13); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/ae/56966652cfb90b788d741a2f4f30bd]
+Oct-12 15:48:56.048 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: bwa_mem (gendx-14); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/71/93436085a658d1cb17ec1972e42687]
+Oct-12 15:48:56.284 [AWSBatch-executor-43] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=fedf523d-1518-415e-9a64-9b1e673a4fbb; work-dir=s3://tower-ops-2/work/28/51296baa1807ad5f74614930dcfd64
+Oct-12 15:48:56.284 [AWSBatch-executor-43] INFO  nextflow.Session - [28/51296b] Submitted process > bam_sort (gendx-1)
+Oct-12 15:48:56.351 [AWSBatch-executor-44] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=a34efd1f-ee38-4683-9807-1aedda519723; work-dir=s3://tower-ops-2/work/f4/dd93a9f2aa0fa5797f3e1e778ac8f4
+Oct-12 15:48:56.351 [AWSBatch-executor-44] INFO  nextflow.Session - [f4/dd93a9] Submitted process > bam_sort (gendx-13)
+Oct-12 15:48:57.170 [AWSBatch-executor-45] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=7c06b383-7647-49a8-b3dc-88b22411370b; work-dir=s3://tower-ops-2/work/e6/f70a2a0f7f0626d1b7036ddaf1d5b8
+Oct-12 15:48:57.170 [AWSBatch-executor-45] INFO  nextflow.Session - [e6/f70a2a] Submitted process > bam_sort (gendx-14)
+Oct-12 15:49:05.361 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: bwa_mem (gendx-16); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/48/a8bb199117ab1152cfac7de8667717]
+Oct-12 15:49:05.556 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: bwa_mem (gendx-4); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/f7/656c0b2b5010bc996325c2bce37fbc]
+Oct-12 15:49:05.746 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: bwa_mem (gendx-9); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/cf/c2a5ce8303a0c1294c59a4a034166e]
+Oct-12 15:49:05.803 [AWSBatch-executor-47] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=2a410e69-b8f0-4817-b225-88501ceb6b26; work-dir=s3://tower-ops-2/work/a9/d5268d85ce5c2c95c08bf6bc98d4da
+Oct-12 15:49:05.803 [AWSBatch-executor-47] INFO  nextflow.Session - [a9/d5268d] Submitted process > bam_sort (gendx-16)
+Oct-12 15:49:05.918 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: bwa_mem (gendx-3); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/88/4ac27ba642e2c93d8b7f3336bddc42]
+Oct-12 15:49:06.061 [AWSBatch-executor-48] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=ef4de232-8daa-4d28-ae42-6464f660578a; work-dir=s3://tower-ops-2/work/4c/abbf6a2d2902d4535ae272107d84fd
+Oct-12 15:49:06.061 [AWSBatch-executor-48] INFO  nextflow.Session - [4c/abbf6a] Submitted process > bam_sort (gendx-4)
+Oct-12 15:49:06.122 [AWSBatch-executor-49] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=802b850d-fb06-4c9f-b749-c79e15225088; work-dir=s3://tower-ops-2/work/fb/0b665da342c613ec772df2f3ec3da1
+Oct-12 15:49:06.122 [AWSBatch-executor-49] INFO  nextflow.Session - [fb/0b665d] Submitted process > bam_sort (gendx-9)
+Oct-12 15:49:06.276 [AWSBatch-executor-50] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=892cf60b-c88d-4d2f-b32c-a6e0343d50f0; work-dir=s3://tower-ops-2/work/af/28f6d62edb2e883c4c20a57ec6aac7
+Oct-12 15:49:06.276 [AWSBatch-executor-50] INFO  nextflow.Session - [af/28f6d6] Submitted process > bam_sort (gendx-3)
+Oct-12 15:49:15.382 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: bwa_mem (gendx-11); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/44/893af1c3bde53c30aa70ee5df4b1eb]
+Oct-12 15:49:15.632 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: bwa_mem (gendx-10); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/c9/29c353556a41693d29791fb7df203c]
+Oct-12 15:49:15.824 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: bwa_mem (gendx-2); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/5a/e3dea2f98d2194288dc1be943ded8f]
+Oct-12 15:49:16.003 [AWSBatch-executor-52] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=cfd7b456-c4de-4520-bedc-768d712aa886; work-dir=s3://tower-ops-2/work/7e/6242ac732c44a8628203440821ba77
+Oct-12 15:49:16.003 [AWSBatch-executor-52] INFO  nextflow.Session - [7e/6242ac] Submitted process > bam_sort (gendx-11)
+Oct-12 15:49:16.004 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: bwa_mem (gendx-15); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/5c/88964b3a8d0ef7f61435cc23f18ee9]
+Oct-12 15:49:16.018 [AWSBatch-executor-53] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=c297e2c3-f0ee-4b7d-bd37-5b57f4bc0be7; work-dir=s3://tower-ops-2/work/99/bbfea1581468a7d513024385e1e757
+Oct-12 15:49:16.023 [AWSBatch-executor-53] INFO  nextflow.Session - [99/bbfea1] Submitted process > bam_sort (gendx-10)
+Oct-12 15:49:16.178 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/45aa115841074b1f847b86f0b8647970 - The task is likely running on another cluster
+Oct-12 15:49:16.209 [AWSBatch-executor-54] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=d62a77f7-cc23-4d65-a6c9-12f069ed14f5; work-dir=s3://tower-ops-2/work/5b/38270389c550c749df3db606e30cc4
+Oct-12 15:49:16.209 [AWSBatch-executor-54] INFO  nextflow.Session - [5b/382703] Submitted process > bam_sort (gendx-2)
+Oct-12 15:49:16.223 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/adfe35874f79468eb2804685f32492a2 - The task is likely running on another cluster
+Oct-12 15:49:16.267 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/b9874a0ec8344a0b96f9e6a5c9fd26d9 - The task is likely running on another cluster
+Oct-12 15:49:16.319 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/769189ff729b4aea9fb37c0945ac6ff6 - The task is likely running on another cluster
+Oct-12 15:49:16.346 [AWSBatch-executor-55] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=f9bc62a1-b555-4ad9-8404-acb89e7a45c5; work-dir=s3://tower-ops-2/work/e9/52310a58a50845fbe7a23777d75662
+Oct-12 15:49:16.346 [AWSBatch-executor-55] INFO  nextflow.Session - [e9/52310a] Submitted process > bam_sort (gendx-15)
+Oct-12 15:49:16.362 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/39e7cde9d78a4562a1687b060b580adc - The task is likely running on another cluster
+Oct-12 15:49:16.412 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/7d774b44e30d444ab733809bcbf16d52 - The task is likely running on another cluster
+Oct-12 15:49:16.467 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/b958d6f5bbbc45b28fc9d11b8a5869ff - The task is likely running on another cluster
+Oct-12 15:49:25.399 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: bwa_mem (gendx-5); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/fa/7d41b520dbc42fcdd04489db06296d]
+Oct-12 15:49:25.622 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: bwa_mem (gendx-7); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/4f/68f90f24ecb119526ef53cbf012867]
+Oct-12 15:49:25.762 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: bwa_mem (gendx-6); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/ea/b02d0d448579464209b7aaabb53d4a]
+Oct-12 15:49:25.924 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: bam_sort (gendx-1); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/28/51296baa1807ad5f74614930dcfd64]
+Oct-12 15:49:25.936 [AWSBatch-executor-57] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=94978527-c90e-48d0-a983-62033885f072; work-dir=s3://tower-ops-2/work/d7/60bea8c0828f666ea7a7adfb43ab01
+Oct-12 15:49:25.936 [AWSBatch-executor-57] INFO  nextflow.Session - [d7/60bea8] Submitted process > bam_sort (gendx-5)
+Oct-12 15:49:26.073 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=144; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Oct-12 15:49:26.106 [PublishDir-1] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/28/51296baa1807ad5f74614930dcfd64/gendx-1.bam.bai to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-1.bam.bai
+Oct-12 15:49:26.107 [PublishDir-1] DEBUG com.upplication.s3fs.AmazonS3Client - Creating S3 transfer manager pool - chunk-size=104857600; max-treads=10;
+Oct-12 15:49:26.107 [PublishDir-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 's3-transfer-manager' minSize=1; maxSize=10; workQueue=LinkedBlockingQueue[100]; allowCoreThreadTimeout=false
+Oct-12 15:49:26.124 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: bam_sort (gendx-13); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/f4/dd93a9f2aa0fa5797f3e1e778ac8f4]
+Oct-12 15:49:26.135 [AWSBatch-executor-59] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=384757fa-b1db-4a0a-a509-5b61fb7f98e3; work-dir=s3://tower-ops-2/work/e6/73f9a0b18c1c2ffbd73c61c3d5c497
+Oct-12 15:49:26.136 [AWSBatch-executor-59] INFO  nextflow.Session - [e6/73f9a0] Submitted process > bam_sort (gendx-7)
+Oct-12 15:49:26.140 [AWSBatch-executor-58] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=d067dd60-2013-48a7-9ec9-23b2ed074820; work-dir=s3://tower-ops-2/work/3d/eb1115c786bb2efee018aaf6cc4bc2
+Oct-12 15:49:26.141 [AWSBatch-executor-58] INFO  nextflow.Session - [3d/eb1115] Submitted process > bam_sort (gendx-6)
+Oct-12 15:49:26.211 [PublishDir-2] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/28/51296baa1807ad5f74614930dcfd64/gendx-1.bam to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-1.bam
+Oct-12 15:49:26.291 [PublishDir-4] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/f4/dd93a9f2aa0fa5797f3e1e778ac8f4/gendx-13.bam.bai to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-13.bam.bai
+Oct-12 15:49:26.305 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: bam_sort (gendx-14); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/e6/f70a2a0f7f0626d1b7036ddaf1d5b8]
+Oct-12 15:49:26.328 [AWSBatch-executor-60] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] [AWS BATCH] Found job definition name=nf-dovetailg-r-cov:2; container=dovetailg/r-cov
+Oct-12 15:49:26.415 [AWSBatch-executor-60] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=2fc4465f-4eed-4f62-aedf-f729cd6dbe64; work-dir=s3://tower-ops-2/work/e7/0a70601548a2987d40480a90cd7e87
+Oct-12 15:49:26.415 [AWSBatch-executor-60] INFO  nextflow.Session - [e7/0a7060] Submitted process > bam2bw (_gendx-1)
+Oct-12 15:49:26.457 [PublishDir-5] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/e6/f70a2a0f7f0626d1b7036ddaf1d5b8/gendx-14.bam.bai to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-14.bam.bai
+Oct-12 15:49:26.471 [PublishDir-6] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/e6/f70a2a0f7f0626d1b7036ddaf1d5b8/gendx-14.bam to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-14.bam
+Oct-12 15:49:26.480 [PublishDir-3] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/f4/dd93a9f2aa0fa5797f3e1e778ac8f4/gendx-13.bam to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-13.bam
+Oct-12 15:49:26.497 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/6d4e641092ef453eaa13f5705c019341 - The task is likely running on another cluster
+Oct-12 15:49:26.541 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/a5160bcf3c5d43b786b32d5fc4d97ac2 - The task is likely running on another cluster
+Oct-12 15:49:26.576 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/8cc35b0a13304e288fdd5aac4cd868c5 - The task is likely running on another cluster
+Oct-12 15:49:26.634 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/171dfffa6078465ebed6e06a2de90e7d - The task is likely running on another cluster
+Oct-12 15:49:26.652 [AWSBatch-executor-61] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=c104ee69-58f8-45f3-8c21-c5284c7014cd; work-dir=s3://tower-ops-2/work/08/546270ce12121a73e8b13cbd1bac25
+Oct-12 15:49:26.652 [AWSBatch-executor-61] INFO  nextflow.Session - [08/546270] Submitted process > bam2bw (_gendx-13)
+Oct-12 15:49:26.690 [AWSBatch-executor-62] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=5bde4c20-74cc-45fe-9c48-3bb42b5b5ef2; work-dir=s3://tower-ops-2/work/7a/a536e2aefb8af529a2fd96bf31c39e
+Oct-12 15:49:26.691 [AWSBatch-executor-62] INFO  nextflow.Session - [7a/a536e2] Submitted process > bam2bw (_gendx-14)
+Oct-12 15:49:35.394 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: bwa_mem (gendx-8); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/fa/10a13614fff25f25efde3be71590e2]
+Oct-12 15:49:35.770 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: bam_sort (gendx-16); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/a9/d5268d85ce5c2c95c08bf6bc98d4da]
+Oct-12 15:49:35.948 [AWSBatch-executor-64] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=fa8e78b4-1444-40bc-8656-555f99bc76ee; work-dir=s3://tower-ops-2/work/c9/533da109e311219539988eb667652e
+Oct-12 15:49:35.949 [AWSBatch-executor-64] INFO  nextflow.Session - [c9/533da1] Submitted process > bam_sort (gendx-8)
+Oct-12 15:49:35.953 [PublishDir-8] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/a9/d5268d85ce5c2c95c08bf6bc98d4da/gendx-16.bam to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-16.bam
+Oct-12 15:49:35.985 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: bam_sort (gendx-4); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/4c/abbf6a2d2902d4535ae272107d84fd]
+Oct-12 15:49:36.053 [PublishDir-7] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/a9/d5268d85ce5c2c95c08bf6bc98d4da/gendx-16.bam.bai to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-16.bam.bai
+Oct-12 15:49:36.158 [PublishDir-9] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/4c/abbf6a2d2902d4535ae272107d84fd/gendx-4.bam.bai to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-4.bam.bai
+Oct-12 15:49:36.162 [PublishDir-10] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/4c/abbf6a2d2902d4535ae272107d84fd/gendx-4.bam to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-4.bam
+Oct-12 15:49:36.224 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 22; name: bam_sort (gendx-9); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/fb/0b665da342c613ec772df2f3ec3da1]
+Oct-12 15:49:36.234 [AWSBatch-executor-65] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=3c8fd867-e39e-4299-b8ce-f6d09bef05d4; work-dir=s3://tower-ops-2/work/f0/ca8455ce191304d3e3287df9004e43
+Oct-12 15:49:36.234 [AWSBatch-executor-65] INFO  nextflow.Session - [f0/ca8455] Submitted process > bam2bw (_gendx-16)
+Oct-12 15:49:36.432 [AWSBatch-executor-66] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=c07c3e9d-8b1e-43c9-96ab-c9c33df6a04d; work-dir=s3://tower-ops-2/work/60/667b28e3dd2fa410c10446b49eaf91
+Oct-12 15:49:36.432 [AWSBatch-executor-66] INFO  nextflow.Session - [60/667b28] Submitted process > bam2bw (_gendx-4)
+Oct-12 15:49:36.517 [PublishDir-4] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/fb/0b665da342c613ec772df2f3ec3da1/gendx-9.bam to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-9.bam
+Oct-12 15:49:36.519 [PublishDir-1] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/fb/0b665da342c613ec772df2f3ec3da1/gendx-9.bam.bai to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-9.bam.bai
+Oct-12 15:49:36.552 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: bam_sort (gendx-3); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/af/28f6d62edb2e883c4c20a57ec6aac7]
+Oct-12 15:49:36.719 [PublishDir-2] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/af/28f6d62edb2e883c4c20a57ec6aac7/gendx-3.bam.bai to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-3.bam.bai
+Oct-12 15:49:36.720 [PublishDir-5] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/af/28f6d62edb2e883c4c20a57ec6aac7/gendx-3.bam to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-3.bam
+Oct-12 15:49:36.745 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/0f58c5a4da2e43bfa2550e739d851168 - The task is likely running on another cluster
+Oct-12 15:49:36.748 [AWSBatch-executor-67] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=3c9f00f2-8206-495a-a829-7e06a97eb443; work-dir=s3://tower-ops-2/work/6d/3f355b338af585884f36ff399ca319
+Oct-12 15:49:36.751 [AWSBatch-executor-67] INFO  nextflow.Session - [6d/3f355b] Submitted process > bam2bw (_gendx-9)
+Oct-12 15:49:36.794 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/c4051923a1e941fa909e608893988bae - The task is likely running on another cluster
+Oct-12 15:49:36.842 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/c06dfd87f91641d28a91cb1a4ddbebc1 - The task is likely running on another cluster
+Oct-12 15:49:36.960 [AWSBatch-executor-68] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=3b7d8f3a-9016-4932-af6d-792a5ab7bcf6; work-dir=s3://tower-ops-2/work/5e/4f0a7eb5b1dae386a60ef52429beb8
+Oct-12 15:49:36.960 [AWSBatch-executor-68] INFO  nextflow.Session - [5e/4f0a7e] Submitted process > bam2bw (_gendx-3)
+Oct-12 15:49:45.245 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor awsbatch > tasks to be completed: 16 -- submitted tasks are shown below
+~> TaskHandler[id: 3; name: bwa_mem (gendx-12); status: RUNNING; exit: -; error: -; workDir: s3://tower-ops-2/work/76/efd7023d308a9fe076b8def72afe9f]
+~> TaskHandler[id: 24; name: bam_sort (gendx-11); status: RUNNING; exit: -; error: -; workDir: s3://tower-ops-2/work/7e/6242ac732c44a8628203440821ba77]
+~> TaskHandler[id: 25; name: bam_sort (gendx-10); status: RUNNING; exit: -; error: -; workDir: s3://tower-ops-2/work/99/bbfea1581468a7d513024385e1e757]
+~> TaskHandler[id: 26; name: bam_sort (gendx-2); status: RUNNING; exit: -; error: -; workDir: s3://tower-ops-2/work/5b/38270389c550c749df3db606e30cc4]
+~> TaskHandler[id: 27; name: bam_sort (gendx-15); status: RUNNING; exit: -; error: -; workDir: s3://tower-ops-2/work/e9/52310a58a50845fbe7a23777d75662]
+~> TaskHandler[id: 28; name: bam_sort (gendx-5); status: RUNNING; exit: -; error: -; workDir: s3://tower-ops-2/work/d7/60bea8c0828f666ea7a7adfb43ab01]
+~> TaskHandler[id: 29; name: bam_sort (gendx-7); status: RUNNING; exit: -; error: -; workDir: s3://tower-ops-2/work/e6/73f9a0b18c1c2ffbd73c61c3d5c497]
+~> TaskHandler[id: 30; name: bam_sort (gendx-6); status: RUNNING; exit: -; error: -; workDir: s3://tower-ops-2/work/3d/eb1115c786bb2efee018aaf6cc4bc2]
+~> TaskHandler[id: 31; name: bam2bw (_gendx-1); status: SUBMITTED; exit: -; error: -; workDir: s3://tower-ops-2/work/e7/0a70601548a2987d40480a90cd7e87]
+~> TaskHandler[id: 32; name: bam2bw (_gendx-13); status: SUBMITTED; exit: -; error: -; workDir: s3://tower-ops-2/work/08/546270ce12121a73e8b13cbd1bac25]
+.. remaining tasks omitted.
+Oct-12 15:49:45.406 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 24; name: bam_sort (gendx-11); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/7e/6242ac732c44a8628203440821ba77]
+Oct-12 15:49:45.636 [PublishDir-6] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/7e/6242ac732c44a8628203440821ba77/gendx-11.bam to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-11.bam
+Oct-12 15:49:45.660 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 26; name: bam_sort (gendx-2); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/5b/38270389c550c749df3db606e30cc4]
+Oct-12 15:49:45.734 [PublishDir-3] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/7e/6242ac732c44a8628203440821ba77/gendx-11.bam.bai to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-11.bam.bai
+Oct-12 15:49:45.805 [PublishDir-9] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/5b/38270389c550c749df3db606e30cc4/gendx-2.bam.bai to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-2.bam.bai
+Oct-12 15:49:45.810 [PublishDir-7] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/5b/38270389c550c749df3db606e30cc4/gendx-2.bam to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-2.bam
+Oct-12 15:49:45.845 [AWSBatch-executor-70] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=51750b2d-f92e-4538-af4e-6815f338c4c4; work-dir=s3://tower-ops-2/work/af/fa5e7f1c3b56945126b74b8de1d563
+Oct-12 15:49:45.845 [AWSBatch-executor-70] INFO  nextflow.Session - [af/fa5e7f] Submitted process > bam2bw (_gendx-11)
+Oct-12 15:49:45.882 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 27; name: bam_sort (gendx-15); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/e9/52310a58a50845fbe7a23777d75662]
+Oct-12 15:49:46.042 [AWSBatch-executor-71] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=2801150f-ac3a-4f26-b736-f9c542e41376; work-dir=s3://tower-ops-2/work/6d/625c864c7dbe16102b9b7fd73436f0
+Oct-12 15:49:46.042 [AWSBatch-executor-71] INFO  nextflow.Session - [6d/625c86] Submitted process > bam2bw (_gendx-2)
+Oct-12 15:49:46.092 [PublishDir-1] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/e9/52310a58a50845fbe7a23777d75662/gendx-15.bam.bai to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-15.bam.bai
+Oct-12 15:49:46.098 [PublishDir-2] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/e9/52310a58a50845fbe7a23777d75662/gendx-15.bam to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-15.bam
+Oct-12 15:49:46.325 [AWSBatch-executor-72] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=60201d7a-c987-4f22-b521-707dee433d8d; work-dir=s3://tower-ops-2/work/9e/3e55f623dd15959312b0a68ec9cc89
+Oct-12 15:49:46.326 [AWSBatch-executor-72] INFO  nextflow.Session - [9e/3e55f6] Submitted process > bam2bw (_gendx-15)
+Oct-12 15:49:55.433 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 25; name: bam_sort (gendx-10); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/99/bbfea1581468a7d513024385e1e757]
+Oct-12 15:49:55.677 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 28; name: bam_sort (gendx-5); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/d7/60bea8c0828f666ea7a7adfb43ab01]
+Oct-12 15:49:55.886 [AWSBatch-executor-74] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=db968dcd-4453-443a-84d2-8ae0e098022f; work-dir=s3://tower-ops-2/work/87/8d78b6c924f15ea8591a8f56b9a2c5
+Oct-12 15:49:55.886 [AWSBatch-executor-74] INFO  nextflow.Session - [87/8d78b6] Submitted process > bam2bw (_gendx-10)
+Oct-12 15:49:55.894 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 29; name: bam_sort (gendx-7); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/e6/73f9a0b18c1c2ffbd73c61c3d5c497]
+Oct-12 15:49:56.068 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/a26bb09726134cf2899b6c8eac35a961 - The task is likely running on another cluster
+Oct-12 15:49:56.107 [AWSBatch-executor-75] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=97258f1e-5db6-4eca-8f18-1b1702ce7a97; work-dir=s3://tower-ops-2/work/7b/c9ce751212e7987120beeacb3185bb
+Oct-12 15:49:56.107 [AWSBatch-executor-75] INFO  nextflow.Session - [7b/c9ce75] Submitted process > bam2bw (_gendx-5)
+Oct-12 15:49:56.118 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/cdd6c4ccf8b949f3a25eb60dfcf5a23f - The task is likely running on another cluster
+Oct-12 15:49:56.166 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/3daa1cb85f2249cba04993b2bd5c2c6e - The task is likely running on another cluster
+Oct-12 15:49:56.299 [AWSBatch-executor-76] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=2da4d8e9-0ac7-427c-ab9d-63f0de19e190; work-dir=s3://tower-ops-2/work/33/a5fbc34c35b54fbf8968a249801018
+Oct-12 15:49:56.299 [AWSBatch-executor-76] INFO  nextflow.Session - [33/a5fbc3] Submitted process > bam2bw (_gendx-7)
+Oct-12 15:50:05.429 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 30; name: bam_sort (gendx-6); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/3d/eb1115c786bb2efee018aaf6cc4bc2]
+Oct-12 15:50:05.738 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/33ad5fc4597e40a6a40fe4618bea8da6 - The task is likely running on another cluster
+Oct-12 15:50:05.928 [AWSBatch-executor-78] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=8cd2b084-9874-4efb-92bc-1fa48dd80b22; work-dir=s3://tower-ops-2/work/84/97e13255cdd256a689dfb036680438
+Oct-12 15:50:05.928 [AWSBatch-executor-78] INFO  nextflow.Session - [84/97e132] Submitted process > bam2bw (_gendx-6)
+Oct-12 15:50:15.470 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: bwa_mem (gendx-12); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/76/efd7023d308a9fe076b8def72afe9f]
+Oct-12 15:50:16.034 [AWSBatch-executor-80] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=2829ae81-3544-44b3-ae97-c64b53d0824e; work-dir=s3://tower-ops-2/work/52/43a99be8b35f2efffec91e0bc714f6
+Oct-12 15:50:16.034 [AWSBatch-executor-80] INFO  nextflow.Session - [52/43a99b] Submitted process > bam_sort (gendx-12)
+Oct-12 15:50:25.362 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/0e6ac398658740d498d601dcf5682e49 - The task is likely running on another cluster
+Oct-12 15:50:35.412 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/608802ad6fe64e6da4c40f6cfdede719 - The task is likely running on another cluster
+Oct-12 15:50:35.465 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/ed55a22eabd74cbd94fecd044fe03dbd - The task is likely running on another cluster
+Oct-12 15:50:35.514 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/47970bc5b72c477ba3b3dc7c09a76d3e - The task is likely running on another cluster
+Oct-12 15:50:35.569 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/d146d7cba87f471e836430ddf67e60bc - The task is likely running on another cluster
+Oct-12 15:50:35.624 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/1c0f5eb128b1468ca1f89c453df02528 - The task is likely running on another cluster
+Oct-12 15:50:35.665 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/2864a96d7414413b9d5557021d218073 - The task is likely running on another cluster
+Oct-12 15:50:35.723 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/f709eacef6114f0e84548b33896dea1e - The task is likely running on another cluster
+Oct-12 15:50:38.658 [PublishDir-8] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/99/bbfea1581468a7d513024385e1e757/gendx-10.bam to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-10.bam
+Oct-12 15:50:45.385 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 34; name: bam_sort (gendx-8); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/c9/533da109e311219539988eb667652e]
+Oct-12 15:50:45.854 [AWSBatch-executor-84] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=a5540e0e-c38d-4acb-83fc-83bd335b8a99; work-dir=s3://tower-ops-2/work/4d/aaacf13615fb2baa1e725d41fc0965
+Oct-12 15:50:45.854 [AWSBatch-executor-84] INFO  nextflow.Session - [4d/aaacf1] Submitted process > bam2bw (_gendx-8)
+Oct-12 15:51:05.498 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 31; name: bam2bw (_gendx-1); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/e7/0a70601548a2987d40480a90cd7e87]
+Oct-12 15:51:05.657 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 32; name: bam2bw (_gendx-13); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/08/546270ce12121a73e8b13cbd1bac25]
+Oct-12 15:51:05.737 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 33; name: bam2bw (_gendx-14); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/7a/a536e2aefb8af529a2fd96bf31c39e]
+Oct-12 15:51:05.835 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/7b20f31e58f94e6aabf0b4315e43a16b - The task is likely running on another cluster
+Oct-12 15:51:15.387 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 38; name: bam2bw (_gendx-3); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/5e/4f0a7eb5b1dae386a60ef52429beb8]
+Oct-12 15:51:25.361 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/205ba18969654638bef6418222607918 - The task is likely running on another cluster
+Oct-12 15:51:25.403 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/5db56407c94042919c8fa93718027b7a - The task is likely running on another cluster
+Oct-12 15:51:25.457 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/71f78fb8c00d45e9aca5d4e866f699e9 - The task is likely running on another cluster
+Oct-12 15:51:25.500 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/e329413994db4fa585ac6b89487bec29 - The task is likely running on another cluster
+Oct-12 15:51:30.674 [PublishDir-10] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/99/bbfea1581468a7d513024385e1e757/gendx-10.bam.bai to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-10.bam.bai
+Oct-12 15:52:24.740 [PublishDir-4] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/d7/60bea8c0828f666ea7a7adfb43ab01/gendx-5.bam.bai to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-5.bam.bai
+Oct-12 15:52:28.885 [PublishDir-5] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/d7/60bea8c0828f666ea7a7adfb43ab01/gendx-5.bam to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-5.bam
+Oct-12 15:52:28.958 [PublishDir-4] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/e6/73f9a0b18c1c2ffbd73c61c3d5c497/gendx-7.bam to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-7.bam
+Oct-12 15:52:28.986 [PublishDir-10] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/e6/73f9a0b18c1c2ffbd73c61c3d5c497/gendx-7.bam.bai to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-7.bam.bai
+Oct-12 15:52:37.217 [PublishDir-6] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/3d/eb1115c786bb2efee018aaf6cc4bc2/gendx-6.bam to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-6.bam
+Oct-12 15:52:42.077 [PublishDir-10] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/3d/eb1115c786bb2efee018aaf6cc4bc2/gendx-6.bam.bai to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-6.bam.bai
+Oct-12 15:53:37.120 [PublishDir-8] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/c9/533da109e311219539988eb667652e/gendx-8.bam to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-8.bam
+Oct-12 15:54:29.692 [PublishDir-10] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/c9/533da109e311219539988eb667652e/gendx-8.bam.bai to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-8.bam.bai
+Oct-12 15:54:35.399 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 35; name: bam2bw (_gendx-16); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/f0/ca8455ce191304d3e3287df9004e43]
+Oct-12 15:54:45.255 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor awsbatch > tasks to be completed: 11 -- submitted tasks are shown below
+~> TaskHandler[id: 36; name: bam2bw (_gendx-4); status: RUNNING; exit: -; error: -; workDir: s3://tower-ops-2/work/60/667b28e3dd2fa410c10446b49eaf91]
+~> TaskHandler[id: 37; name: bam2bw (_gendx-9); status: RUNNING; exit: -; error: -; workDir: s3://tower-ops-2/work/6d/3f355b338af585884f36ff399ca319]
+~> TaskHandler[id: 39; name: bam2bw (_gendx-11); status: RUNNING; exit: -; error: -; workDir: s3://tower-ops-2/work/af/fa5e7f1c3b56945126b74b8de1d563]
+~> TaskHandler[id: 40; name: bam2bw (_gendx-2); status: RUNNING; exit: -; error: -; workDir: s3://tower-ops-2/work/6d/625c864c7dbe16102b9b7fd73436f0]
+~> TaskHandler[id: 41; name: bam2bw (_gendx-15); status: RUNNING; exit: -; error: -; workDir: s3://tower-ops-2/work/9e/3e55f623dd15959312b0a68ec9cc89]
+~> TaskHandler[id: 42; name: bam2bw (_gendx-10); status: RUNNING; exit: -; error: -; workDir: s3://tower-ops-2/work/87/8d78b6c924f15ea8591a8f56b9a2c5]
+~> TaskHandler[id: 43; name: bam2bw (_gendx-5); status: RUNNING; exit: -; error: -; workDir: s3://tower-ops-2/work/7b/c9ce751212e7987120beeacb3185bb]
+~> TaskHandler[id: 44; name: bam2bw (_gendx-7); status: RUNNING; exit: -; error: -; workDir: s3://tower-ops-2/work/33/a5fbc34c35b54fbf8968a249801018]
+~> TaskHandler[id: 45; name: bam2bw (_gendx-6); status: RUNNING; exit: -; error: -; workDir: s3://tower-ops-2/work/84/97e13255cdd256a689dfb036680438]
+~> TaskHandler[id: 46; name: bam_sort (gendx-12); status: RUNNING; exit: -; error: -; workDir: s3://tower-ops-2/work/52/43a99be8b35f2efffec91e0bc714f6]
+Oct-12 15:54:45.409 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 39; name: bam2bw (_gendx-11); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/af/fa5e7f1c3b56945126b74b8de1d563]
+Oct-12 15:54:45.577 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 40; name: bam2bw (_gendx-2); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/6d/625c864c7dbe16102b9b7fd73436f0]
+Oct-12 15:54:45.677 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 46; name: bam_sort (gendx-12); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/52/43a99be8b35f2efffec91e0bc714f6]
+Oct-12 15:54:46.054 [AWSBatch-executor-109] DEBUG n.c.aws.batch.AwsBatchTaskHandler - [AWS BATCH] submitted > job=6e5ac3f6-9d80-406f-bb2e-e052d4aacd66; work-dir=s3://tower-ops-2/work/9a/c72d76b55117f6f23ef01cfd15c32c
+Oct-12 15:54:46.054 [AWSBatch-executor-109] INFO  nextflow.Session - [9a/c72d76] Submitted process > bam2bw (_gendx-12)
+Oct-12 15:54:46.506 [PublishDir-5] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/52/43a99be8b35f2efffec91e0bc714f6/gendx-12.bam.bai to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-12.bam.bai
+Oct-12 15:54:55.365 [Task monitor] DEBUG n.cloud.aws.batch.AwsBatchHelper - Cannot find container id for clusterArn=arn:aws:ecs:us-west-2:916851041342:cluster/AWSBatch-spotGPU-a6541102-1a66-30ac-ad35-df1d9b23cf8d and taskArn=arn:aws:ecs:us-west-2:916851041342:task/AWSBatch-spotCE-v3-fea7a402-fb15-3633-806e-ccded42421d5/8c61b32ceb07472c9ec4e1d5d1012ddf - The task is likely running on another cluster
+Oct-12 15:55:25.590 [PublishDir-4] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/52/43a99be8b35f2efffec91e0bc714f6/gendx-12.bam to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/bam/gendx-12.bam
+Oct-12 15:55:35.396 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 36; name: bam2bw (_gendx-4); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/60/667b28e3dd2fa410c10446b49eaf91]
+Oct-12 15:55:35.566 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 37; name: bam2bw (_gendx-9); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/6d/3f355b338af585884f36ff399ca319]
+Oct-12 15:55:45.402 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 41; name: bam2bw (_gendx-15); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/9e/3e55f623dd15959312b0a68ec9cc89]
+Oct-12 15:55:45.650 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 42; name: bam2bw (_gendx-10); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/87/8d78b6c924f15ea8591a8f56b9a2c5]
+Oct-12 15:55:45.741 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 43; name: bam2bw (_gendx-5); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/7b/c9ce751212e7987120beeacb3185bb]
+Oct-12 15:55:45.826 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 44; name: bam2bw (_gendx-7); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/33/a5fbc34c35b54fbf8968a249801018]
+Oct-12 15:55:45.921 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 45; name: bam2bw (_gendx-6); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/84/97e13255cdd256a689dfb036680438]
+Oct-12 15:55:46.004 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 47; name: bam2bw (_gendx-8); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/4d/aaacf13615fb2baa1e725d41fc0965]
+Oct-12 15:56:15.531 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 48; name: bam2bw (_gendx-12); status: COMPLETED; exit: 0; error: -; workDir: s3://tower-ops-2/work/9a/c72d76b55117f6f23ef01cfd15c32c]
+Oct-12 15:56:15.712 [main] DEBUG nextflow.Session - Session await > all processes finished
+Oct-12 15:56:15.758 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-12 15:56:20.761 [main] INFO  nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (10 files)
+Oct-12 15:57:20.763 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (6 files)
+Oct-12 15:58:20.766 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (6 files)
+Oct-12 15:59:20.768 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:00:20.770 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:01:20.773 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:02:20.775 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:03:20.777 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:04:20.779 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:05:20.782 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:06:20.784 [main] INFO  nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:07:20.786 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:08:20.788 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:09:20.789 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:10:20.791 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:11:20.793 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:12:20.796 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:13:20.798 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:14:20.800 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:15:20.802 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:16:20.805 [main] INFO  nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:17:20.806 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:18:20.809 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:19:20.811 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:20:20.813 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:21:20.815 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:22:20.817 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:23:20.819 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:24:20.822 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:25:20.824 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:26:20.826 [main] INFO  nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:27:20.829 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:28:20.831 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:29:20.833 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:30:20.835 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:31:20.838 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:32:20.840 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:33:20.842 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:34:20.845 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:35:20.847 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:36:20.849 [main] INFO  nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (5 files)
+Oct-12 16:37:14.297 [SIGINT handler] DEBUG nextflow.Session - Session aborted -- Cause: SIGINT
+Oct-12 16:37:16.126 [SIGINT handler] INFO  nextflow.Session - Adieu

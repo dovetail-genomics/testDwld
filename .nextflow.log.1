@@ -1,0 +1,138 @@
+Oct-12 17:07:51.007 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -resume
+Oct-12 17:07:51.124 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.10.0-RC3
+Oct-12 17:07:51.142 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/ubuntu/.nextflow/plugins; core-plugins: nf-amazon@1.11.0,nf-azure@0.14.2,nf-codecommit@0.1.2,nf-console@1.0.4,nf-ga4gh@1.0.4,nf-google@1.4.4,nf-tower@1.5.5,nf-wave@0.5.1
+Oct-12 17:07:51.155 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-12 17:07:51.157 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-12 17:07:51.162 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Oct-12 17:07:51.175 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-12 17:07:51.192 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/ubuntu/ebs/working/nfExamples/testDwld/nextflow.config
+Oct-12 17:07:51.193 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/ubuntu/ebs/working/nfExamples/testDwld/nextflow.config
+Oct-12 17:07:51.214 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Oct-12 17:07:51.851 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=1 by probing script field
+Oct-12 17:07:51.868 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [desperate_thompson] DSL1 - revision: d6d2321fa6
+Oct-12 17:07:51.869 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[nf-amazon@1.11.0]
+Oct-12 17:07:51.872 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-amazon@1.11.0, nf-tower@1.5.5]
+Oct-12 17:07:51.873 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-amazon version: 1.11.0
+Oct-12 17:07:51.888 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-amazon@1.11.0' resolved
+Oct-12 17:07:51.888 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-amazon@1.11.0'
+Oct-12 17:07:51.908 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-amazon@1.11.0
+Oct-12 17:07:51.924 [main] DEBUG nextflow.file.FileHelper - > Added 'S3FileSystemProvider' to list of installed providers [s3]
+Oct-12 17:07:51.924 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-tower version: 1.5.5
+Oct-12 17:07:51.933 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-tower@1.5.5' resolved
+Oct-12 17:07:51.933 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-tower@1.5.5'
+Oct-12 17:07:51.945 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-tower@1.5.5
+Oct-12 17:07:51.956 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/ubuntu/.nextflow/secrets/store.json
+Oct-12 17:07:51.960 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@1e0a864d] - activable => nextflow.secret.LocalSecretsProvider@1e0a864d
+Oct-12 17:07:52.043 [main] DEBUG nextflow.Session - Session UUID: 68053adc-6b98-486e-8d01-61ee437118ac
+Oct-12 17:07:52.044 [main] DEBUG nextflow.Session - Run name: desperate_thompson
+Oct-12 17:07:52.044 [main] DEBUG nextflow.Session - Executor pool size: 48
+Oct-12 17:07:52.057 [main] DEBUG nextflow.file.FileHelper - Creating a file system instance for provider: S3FileSystemProvider
+Oct-12 17:07:52.075 [main] DEBUG nextflow.file.FileHelper - AWS S3 config details: {region=us-west-2, s3Acl=BucketOwnerFullControl, upload_max_threads=1, max_error_retry=5}
+Oct-12 17:07:52.497 [main] DEBUG com.upplication.s3fs.AmazonS3Client - Setting S3 canned ACL=bucket-owner-full-control [BucketOwnerFullControl]
+Oct-12 17:07:52.497 [main] DEBUG com.upplication.s3fs.AmazonS3Client - Setting S3 upload max threads=1
+Oct-12 17:07:52.524 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=144; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Oct-12 17:07:52.536 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 22.10.0-RC3 build 5820
+  Created: 07-10-2022 21:33 UTC 
+  System: Linux 5.15.0-1020-aws
+  Runtime: Groovy 3.0.13 on OpenJDK 64-Bit Server VM 11.0.16+8-post-Ubuntu-0ubuntu122.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 1708956@ip-172-31-7-169 [172.31.7.169]
+  CPUs: 48 - Mem: 186.6 GB (12.1 GB) - Swap: 0 (0)
+Oct-12 17:07:52.944 [main] DEBUG nextflow.file.FileHelper - Can't check if specified path is NFS (1): s3://tower-ops-2/work
+
+Oct-12 17:07:52.944 [main] DEBUG nextflow.Session - Work-dir: s3://tower-ops-2/work [null]
+Oct-12 17:07:52.951 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/ubuntu/ebs/working/nfExamples/testDwld/bin
+Oct-12 17:07:52.972 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[AwsBatchExecutor]
+Oct-12 17:07:52.983 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-12 17:07:52.985 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Oct-12 17:07:53.004 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-12 17:07:53.013 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 49; maxThreads: 1000
+Oct-12 17:07:53.256 [main] DEBUG nextflow.Session - Session start
+Oct-12 17:07:53.666 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-12 17:07:53.708 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /dovetail-public/NF-test/genome/nexflow/hg38/; pattern: *.{amb,sa,pac,ann,bwt,fa}; options: [checkIfExists:true]
+Oct-12 17:07:53.756 [PathVisitor-2] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /dovetail-public/NF-test/fastqs/; pattern: *_{R1,R2}*.fastq.gz; options: [:]
+Oct-12 17:07:53.841 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:cpu` matches labels `cpu` for process with name bwa_mem
+Oct-12 17:07:53.844 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: awsbatch
+Oct-12 17:07:53.849 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'awsbatch'
+Oct-12 17:07:53.853 [main] DEBUG nextflow.executor.Executor - [warm up] executor > awsbatch
+Oct-12 17:07:53.868 [main] DEBUG nextflow.util.ThrottlingExecutor - Creating throttling executor with opts: nextflow.util.ThrottlingExecutor$Options(poolName:AWSBatch-executor, limiter:RateLimiter[stableRate=50.0qps], poolSize:240, maxPoolSize:240, queueSize:5000, maxRetries:10, keepAlive:1m, autoThrottle:true, errorBurstDelay:1s, rampUpInterval:100, rampUpFactor:1.2, rampUpMaxRate:1.7976931348623157E308, backOffFactor:2.0, backOffMinRate:0.0166666667, retryDelay:1s)
+Oct-12 17:07:53.873 [main] DEBUG nextflow.util.ThrottlingExecutor - Creating throttling executor with opts: nextflow.util.ThrottlingExecutor$Options(poolName:AWSBatch-reaper, limiter:RateLimiter[stableRate=50.0qps], poolSize:240, maxPoolSize:240, queueSize:5000, maxRetries:10, keepAlive:1m, autoThrottle:true, errorBurstDelay:1s, rampUpInterval:100, rampUpFactor:1.2, rampUpMaxRate:1.7976931348623157E308, backOffFactor:2.0, backOffMinRate:0.0166666667, retryDelay:1s)
+Oct-12 17:07:53.875 [main] DEBUG n.cloud.aws.batch.AwsBatchExecutor - Creating parallel monitor for executor 'awsbatch' > pollInterval=10s; dumpInterval=5m
+Oct-12 17:07:53.945 [main] DEBUG n.cloud.aws.batch.AwsBatchExecutor - [AWS BATCH] Executor options=AwsOptions(cliPath:/home/ec2-user/miniconda/bin/aws, storageClass:null, storageEncryption:null, storageKmsKeyId:null, remoteBinDir:null, region:us-west-2, maxParallelTransfers:1, maxTransferAttempts:5, delayBetweenAttempts:10s, retryMode:standard, maxSpotAttempts:5, debug:null, fetchInstanceType:false, jobRole:null, logsGroup:null, volumes:[], shareIdentifier:null, awsCli:/home/ec2-user/miniconda/bin/aws --region us-west-2)
+Oct-12 17:07:54.010 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:cpu` matches labels `cpu` for process with name bam_sort
+Oct-12 17:07:54.012 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: awsbatch
+Oct-12 17:07:54.021 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'awsbatch'
+Oct-12 17:07:54.026 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:major` matches labels `major` for process with name bam2bw
+Oct-12 17:07:54.033 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: awsbatch
+Oct-12 17:07:54.040 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'awsbatch'
+Oct-12 17:07:54.044 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: bwa_mem, bam2bw, bam_sort
+Oct-12 17:07:54.048 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Oct-12 17:07:54.048 [main] DEBUG nextflow.Session - Session await
+Oct-12 17:07:55.347 [Actor Thread 44] INFO  nextflow.processor.TaskProcessor - [48/a8bb19] Cached process > bwa_mem (gendx-16)
+Oct-12 17:07:55.364 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [fa/7d41b5] Cached process > bwa_mem (gendx-5)
+Oct-12 17:07:55.367 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [c9/29c353] Cached process > bwa_mem (gendx-10)
+Oct-12 17:07:55.376 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [5c/88964b] Cached process > bwa_mem (gendx-15)
+Oct-12 17:07:55.376 [Actor Thread 43] INFO  nextflow.processor.TaskProcessor - [44/893af1] Cached process > bwa_mem (gendx-11)
+Oct-12 17:07:55.376 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [c4/adff5e] Cached process > bwa_mem (gendx-1)
+Oct-12 17:07:55.376 [Actor Thread 42] INFO  nextflow.processor.TaskProcessor - [4f/68f90f] Cached process > bwa_mem (gendx-7)
+Oct-12 17:07:55.379 [Actor Thread 41] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=144; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Oct-12 17:07:55.388 [Actor Thread 49] INFO  nextflow.processor.TaskProcessor - [71/934360] Cached process > bwa_mem (gendx-14)
+Oct-12 17:07:55.392 [Actor Thread 37] INFO  nextflow.processor.TaskProcessor - [f7/656c0b] Cached process > bwa_mem (gendx-4)
+Oct-12 17:07:55.395 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [ae/569666] Cached process > bwa_mem (gendx-13)
+Oct-12 17:07:55.398 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [fa/10a136] Cached process > bwa_mem (gendx-8)
+Oct-12 17:07:55.411 [Actor Thread 40] INFO  nextflow.processor.TaskProcessor - [5a/e3dea2] Cached process > bwa_mem (gendx-2)
+Oct-12 17:07:55.415 [Actor Thread 38] INFO  nextflow.processor.TaskProcessor - [88/4ac27b] Cached process > bwa_mem (gendx-3)
+Oct-12 17:07:55.419 [Actor Thread 35] INFO  nextflow.processor.TaskProcessor - [cf/c2a5ce] Cached process > bwa_mem (gendx-9)
+Oct-12 17:07:55.422 [PublishDir-7] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/5c/88964b3a8d0ef7f61435cc23f18ee9/gendx-15_S23_L001_R1_001.fastq.gz to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/fastqs/gendx-15_S23_L001_R1_001.fastq.gz
+Oct-12 17:07:55.425 [PublishDir-7] DEBUG com.upplication.s3fs.AmazonS3Client - Creating S3 transfer manager pool - chunk-size=104857600; max-treads=1;
+Oct-12 17:07:55.425 [PublishDir-7] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 's3-transfer-manager' minSize=1; maxSize=1; workQueue=LinkedBlockingQueue[100]; allowCoreThreadTimeout=false
+Oct-12 17:07:55.425 [PublishDir-2] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/fa/7d41b520dbc42fcdd04489db06296d/gendx-5_S13_L001_R2_001.fastq.gz to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/fastqs/gendx-5_S13_L001_R2_001.fastq.gz
+Oct-12 17:07:55.426 [PublishDir-8] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/c9/29c353556a41693d29791fb7df203c/gendx-10_S18_L001_R1_001.fastq.gz to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/fastqs/gendx-10_S18_L001_R1_001.fastq.gz
+Oct-12 17:07:55.427 [PublishDir-9] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/c4/adff5e0dec0f905ddd9309ce543f7f/gendx-1_S12_L001_R1_001.fastq.gz to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/fastqs/gendx-1_S12_L001_R1_001.fastq.gz
+Oct-12 17:07:55.428 [PublishDir-5] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/48/a8bb199117ab1152cfac7de8667717/gendx-16_S24_L001_R1_001.fastq.gz to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/fastqs/gendx-16_S24_L001_R1_001.fastq.gz
+Oct-12 17:07:55.430 [PublishDir-1] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/48/a8bb199117ab1152cfac7de8667717/gendx-16_S24_L001_R2_001.fastq.gz to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/fastqs/gendx-16_S24_L001_R2_001.fastq.gz
+Oct-12 17:07:55.431 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [ea/b02d0d] Cached process > bwa_mem (gendx-6)
+Oct-12 17:07:55.432 [PublishDir-3] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/5c/88964b3a8d0ef7f61435cc23f18ee9/gendx-15_S23_L001_R2_001.fastq.gz to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/fastqs/gendx-15_S23_L001_R2_001.fastq.gz
+Oct-12 17:07:55.432 [PublishDir-4] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/c9/29c353556a41693d29791fb7df203c/gendx-10_S18_L001_R2_001.fastq.gz to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/fastqs/gendx-10_S18_L001_R2_001.fastq.gz
+Oct-12 17:07:55.462 [Actor Thread 45] INFO  nextflow.processor.TaskProcessor - [76/efd702] Cached process > bwa_mem (gendx-12)
+Oct-12 17:07:55.525 [PublishDir-10] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/c4/adff5e0dec0f905ddd9309ce543f7f/gendx-1_S12_L001_R2_001.fastq.gz to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/fastqs/gendx-1_S12_L001_R2_001.fastq.gz
+Oct-12 17:07:55.526 [PublishDir-6] DEBUG c.u.s3fs.S3FileSystemProvider - S3 download file from=s3://tower-ops-2/work/fa/7d41b520dbc42fcdd04489db06296d/gendx-5_S13_L001_R1_001.fastq.gz to=/home/ubuntu/ebs/working/nfExamples/testDwld/tmp/fastqs/gendx-5_S13_L001_R1_001.fastq.gz
+Oct-12 17:07:55.578 [Actor Thread 17] INFO  nextflow.processor.TaskProcessor - [e9/52310a] Cached process > bam_sort (gendx-15)
+Oct-12 17:07:55.580 [Actor Thread 30] INFO  nextflow.processor.TaskProcessor - [d7/60bea8] Cached process > bam_sort (gendx-5)
+Oct-12 17:07:55.582 [Actor Thread 31] INFO  nextflow.processor.TaskProcessor - [a9/d5268d] Cached process > bam_sort (gendx-16)
+Oct-12 17:07:55.588 [Actor Thread 43] INFO  nextflow.processor.TaskProcessor - [4c/abbf6a] Cached process > bam_sort (gendx-4)
+Oct-12 17:07:55.594 [Actor Thread 28] INFO  nextflow.processor.TaskProcessor - [28/51296b] Cached process > bam_sort (gendx-1)
+Oct-12 17:07:55.595 [Actor Thread 32] INFO  nextflow.processor.TaskProcessor - [7e/6242ac] Cached process > bam_sort (gendx-11)
+Oct-12 17:07:55.603 [Actor Thread 29] INFO  nextflow.processor.TaskProcessor - [99/bbfea1] Cached process > bam_sort (gendx-10)
+Oct-12 17:07:55.604 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [f4/dd93a9] Cached process > bam_sort (gendx-13)
+Oct-12 17:07:55.609 [Actor Thread 42] INFO  nextflow.processor.TaskProcessor - [c9/533da1] Cached process > bam_sort (gendx-8)
+Oct-12 17:07:55.623 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [5b/382703] Cached process > bam_sort (gendx-2)
+Oct-12 17:07:55.628 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [e6/f70a2a] Cached process > bam_sort (gendx-14)
+Oct-12 17:07:55.631 [Actor Thread 49] INFO  nextflow.processor.TaskProcessor - [af/28f6d6] Cached process > bam_sort (gendx-3)
+Oct-12 17:07:55.634 [Actor Thread 38] INFO  nextflow.processor.TaskProcessor - [3d/eb1115] Cached process > bam_sort (gendx-6)
+Oct-12 17:07:55.635 [Actor Thread 40] INFO  nextflow.processor.TaskProcessor - [fb/0b665d] Cached process > bam_sort (gendx-9)
+Oct-12 17:07:55.683 [Actor Thread 35] INFO  nextflow.processor.TaskProcessor - [52/43a99b] Cached process > bam_sort (gendx-12)
+Oct-12 17:07:55.731 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [e6/73f9a0] Cached process > bam_sort (gendx-7)
+Oct-12 17:07:55.750 [Actor Thread 30] INFO  nextflow.processor.TaskProcessor - [f0/ca8455] Cached process > bam2bw (_gendx-16)
+Oct-12 17:07:55.754 [Actor Thread 17] INFO  nextflow.processor.TaskProcessor - [9e/3e55f6] Cached process > bam2bw (_gendx-15)
+Oct-12 17:07:55.757 [Actor Thread 43] INFO  nextflow.processor.TaskProcessor - [e7/0a7060] Cached process > bam2bw (_gendx-1)
+Oct-12 17:07:55.758 [Actor Thread 28] INFO  nextflow.processor.TaskProcessor - [af/fa5e7f] Cached process > bam2bw (_gendx-11)
+Oct-12 17:07:55.762 [Actor Thread 37] INFO  nextflow.processor.TaskProcessor - [60/667b28] Cached process > bam2bw (_gendx-4)
+Oct-12 17:07:55.770 [Actor Thread 45] INFO  nextflow.processor.TaskProcessor - [7b/c9ce75] Cached process > bam2bw (_gendx-5)
+Oct-12 17:07:55.779 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [87/8d78b6] Cached process > bam2bw (_gendx-10)
+Oct-12 17:07:55.779 [Actor Thread 29] INFO  nextflow.processor.TaskProcessor - [4d/aaacf1] Cached process > bam2bw (_gendx-8)
+Oct-12 17:07:55.787 [Actor Thread 32] INFO  nextflow.processor.TaskProcessor - [7a/a536e2] Cached process > bam2bw (_gendx-14)
+Oct-12 17:07:55.794 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [08/546270] Cached process > bam2bw (_gendx-13)
+Oct-12 17:07:55.799 [Actor Thread 38] INFO  nextflow.processor.TaskProcessor - [5e/4f0a7e] Cached process > bam2bw (_gendx-3)
+Oct-12 17:07:55.807 [Actor Thread 49] INFO  nextflow.processor.TaskProcessor - [84/97e132] Cached process > bam2bw (_gendx-6)
+Oct-12 17:07:55.812 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [6d/3f355b] Cached process > bam2bw (_gendx-9)
+Oct-12 17:07:55.815 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [6d/625c86] Cached process > bam2bw (_gendx-2)
+Oct-12 17:07:55.900 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [33/a5fbc3] Cached process > bam2bw (_gendx-7)
+Oct-12 17:07:55.966 [Actor Thread 42] INFO  nextflow.processor.TaskProcessor - [9a/c72d76] Cached process > bam2bw (_gendx-12)
+Oct-12 17:07:55.966 [main] DEBUG nextflow.Session - Session await > all processes finished
+Oct-12 17:08:03.892 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-12 17:08:08.894 [main] INFO  nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (32 files)
+Oct-12 17:09:08.898 [main] DEBUG nextflow.util.ThreadPoolHelper - Waiting for file transfers to complete (32 files)
+Oct-12 17:09:52.276 [SIGINT handler] DEBUG nextflow.Session - Session aborted -- Cause: SIGINT
+Oct-12 17:09:52.710 [SIGINT handler] INFO  nextflow.Session - Adieu

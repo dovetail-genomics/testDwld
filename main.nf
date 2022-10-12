@@ -48,7 +48,9 @@ process bam_sort {
     label "cpu"
     container 'dovetailg/bwa-samtools'
     
-    publishDir "${params.outDir}/bam"
+    // publishDir "${params.outDir}/bam",
+    //     saveAs: {filename -> filename.endsWith('.bam') ? filename : null}
+
     input:
     tuple val(id), path(bam) from sam_ch1
     
