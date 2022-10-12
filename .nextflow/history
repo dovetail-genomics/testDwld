@@ -1,0 +1,19 @@
+2022-10-12 00:10:38	3.2s	confident_bartik	ERR	f58e0a13e067f0e65a7bf0ef576fc02c	af28cef7-ec4d-4c0f-a533-6400de21d918	nextflow run main.nf -profile local
+2022-10-12 00:11:37	2.9s	reverent_venter	OK	8a7b77933205e64270a591a49282baa3	daa28cb1-947a-4b97-af42-d1828a2c98d6	nextflow run main.nf -profile local
+2022-10-12 00:12:17	4.7s	spontaneous_gilbert	ERR	92d315f7f0ec86ba4b7fef24b7e696a8	e2fde53f-e64f-4bed-8070-f15953f6c805	nextflow run main.nf -profile local
+2022-10-12 00:14:30	-	amazing_kalam	-	2ff32946e53aff0a9b9c92638a232d67	b5b7a529-ad92-40e2-90a2-c68cc298a833	nextflow run main.nf -profile local
+2022-10-12 00:15:16	-	hopeful_moriondo	-	2ff32946e53aff0a9b9c92638a232d67	1cb1f03a-52e2-4e90-ac59-e41d29605041	nextflow run main.nf -profile local
+2022-10-12 00:19:26	-	wise_panini	-	8292dfa3f93c5a5f1a860dfe9b7b8e1f	d5f603af-d89b-4d01-9230-6dc98bd9b296	nextflow run main.nf -profile local
+2022-10-12 00:20:21	2.9s	cranky_hypatia	ERR	325498fcb07bc468359d880471be21a4	7a7673e6-6774-4ef7-b964-54d8371519e9	nextflow run main.nf -profile local
+2022-10-12 00:21:42	33.1s	furious_aryabhata	ERR	a1af194c73c7dd45bfef410f912fa2c6	6329aff5-575c-4710-8cf4-22af41bf1507	nextflow run main.nf -profile local
+2022-10-12 00:22:19	4.3s	scruffy_wiles	ERR	d8c600914c9e81a5679ef2970e8f8c71	6a5f71db-0243-4937-be46-db01a16c99b0	nextflow run main.nf -profile local
+2022-10-12 00:30:08	11.2s	big_hugle	ERR	d8c600914c9e81a5679ef2970e8f8c71	98564794-38f6-4c2b-a2c8-5365d546cde7	nextflow run main.nf -profile local
+2022-10-12 00:31:39	11m 51s	goofy_venter	ERR	e213bca4050e1859546be595bdc9c4a8	4003304a-394b-49e9-afeb-1ca42e6227b1	nextflow run main.nf
+2022-10-12 01:02:10	7m 42s	reverent_bose	OK	bda140c4e34aeb221f08dbb59b0523ae	2f31ba76-0759-4c6a-9796-d7f3c1719572	nextflow run main.nf
+2022-10-12 01:10:29	-	jolly_lattes	-	e37d64d5b4993f41720295a8cb964128	1e851925-6296-4ed7-8d98-4962d16cae63	nextflow run main.nf
+2022-10-12 01:10:37	-	adoring_moriondo	-	e37d64d5b4993f41720295a8cb964128	1e851925-6296-4ed7-8d98-4962d16cae63	nextflow run main.nf -resume
+2022-10-12 01:11:03	7m 13s	drunk_montalcini	OK	e37d64d5b4993f41720295a8cb964128	1e851925-6296-4ed7-8d98-4962d16cae63	nextflow run main.nf -resume bda140c4e3
+2022-10-12 01:19:19	-	high_sanger	-	a09d5172f6205171cbca55fd7f59649c	1e851925-6296-4ed7-8d98-4962d16cae63	nextflow run main.nf -resume
+2022-10-12 01:27:51	-	kickass_bernard	-	d410db93b93cb10e66ba9d1732092d35	1e851925-6296-4ed7-8d98-4962d16cae63	nextflow run main.nf -resume
+2022-10-12 01:28:19	4m 37s	wise_miescher	OK	d410db93b93cb10e66ba9d1732092d35	1e851925-6296-4ed7-8d98-4962d16cae63	nextflow run main.nf -resume
+2022-10-12 01:33:44	12h 14s	distraught_lovelace	OK	53533d58054bb1072aa3023f1e7ec480	1e851925-6296-4ed7-8d98-4962d16cae63	nextflow run main.nf -resume
